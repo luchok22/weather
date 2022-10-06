@@ -26,14 +26,20 @@ body{
 }
 #hourly{
     display: flex;
+    border: 1px solid #76a1a1;
+    border-radius: 16px;
+    padding-left: 15px;
+    margin-top: 2vh;
     overflow: scroll;
-    margin-left: 10%;
+    margin-left: 2%;
 }
 .hour{
     margin-top: 2vh;
 }
 #daily{
-    margin-top: 5vh;
+    border: 1px solid #76a1a1;
+    border-radius: 20px;
+    margin-top: 3vh;
 }
 .dailychat{
     display: flex;
