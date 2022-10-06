@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./img/weatherBackground.jpg);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+#current{
+    text-align: center;
+    margin-top: 5vh;
+}
+#current h1{
+    font-size: 47px;
+}
+ h2{
+    margin-top: 1vh;
+    font-size: 30px;
+}
+#current p{
+    font-size: 25px;
+}
+#hourly{
+    display: flex;
+    overflow: scroll;
+    margin-left: 10%;
+}
+.hour{
+    margin-top: 2vh;
+}
+#daily{
+    margin-top: 5vh;
+}
+.dailychat{
+    display: flex;
+    justify-content: space-evenly   ;
+    margin-top: 2vh;
+}
+#daily img{
+    width: 20%;
+    margin-top: -25px;
+}
+.dailychat h3{
+    color: rgb(173, 171, 171);
+}
+#max{
+    color: white;
+}
