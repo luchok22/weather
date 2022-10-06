@@ -20,7 +20,7 @@ async function getData(url){
     weatherhourly(data.hourly)
     weatherdaily(data.daily)
     $zone.textContent = data.timezone
-    $temp.textContent = data.current.temp
+    $temp.textContent = Math.trunc(data.current.temp) + "°"
     $timezone.textContent = data.current.weather[0].description
 
     }
@@ -41,7 +41,6 @@ async function getData(url){
 
     function weatherdaily(data){
         data.forEach(element => {
-            
         let weekend = ["Сегодня", "Чт", "Пт", "Сб", "Вс", "Пн", "Вт", "Ср",]
             console.log(element)
             $daily.insertAdjacentHTML('beforeend',`
