@@ -10,9 +10,23 @@ body{
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
+#timezone{
+    display: flex;
+    flex-direction: column;
+}
+.timp{
+    text-align: center;
+}
+select{
+    background-color: rgb(69, 69, 153);
+    color: white;
+    font-size: 20px;
+}
 #current{
     text-align: center;
-    margin-top: 5vh;
+}
+#timezone img{
+    width: 20%;
 }
 #current h1{
     font-size: 47px;
@@ -43,16 +57,36 @@ body{
 }
 .dailychat{
     display: flex;
+    align-items: center;
     justify-content: space-evenly   ;
     margin-top: 2vh;
 }
-#daily img{
-    width: 20%;
+.dailychat img{
+    width: 10%;
     margin-top: -25px;
+}
+.dailychat p {
+    width: 20%;
 }
 .dailychat h3{
     color: rgb(173, 171, 171);
 }
 #max{
     color: white;
+}
+.hour{
+    text-align: center;
+}
+.max-min{
+    display: flex;
+    justify-content: space-evenly;
+}   
+
+@media (max-width: 576px) {
+    .dailychat p{
+        width: 20%;
+    }
+    .dailychat img{
+    width: 100px; 
+    }
 }
